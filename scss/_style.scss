@@ -1,0 +1,40 @@
+.section{
+
+
+    .container{
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+        background-color:$color-1;
+        @include flex(none, none, column);
+
+            .left-box{
+            width: $size-1;
+            height: 500px;
+            background-color: $color-1;
+            @include flex(center,center);
+         
+
+            h2{
+                font-size: $f-size-1;
+                font-weight: bold;
+                color: white;
+                font-family: $font-1;
+            }
+         } 
+
+            .right-box{
+            width: $size-1;
+            height: 500px;
+            background-color: $color-2;
+            @include flex(center,center);
+
+            h2{
+                font-size: $f-size-2;
+                font-weight: bold;
+                color: black;
+                font-family: $font-2;
+            }
+         }
+    }
+}
