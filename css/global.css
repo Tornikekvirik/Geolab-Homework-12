@@ -60,4 +60,71 @@ a {
   font-style: normal;
   font-display: swap;
 }
+
+.section .container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+}
+
+.section .container > div {
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .container > div > h2 {
+  font-size: 50px;
+}
+
+.section .container .left-box {
+  background-color: red;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.section .container .left-box:hover {
+  background-color: green;
+}
+
+.section .container .left-box h2 {
+  font-weight: bold;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  -webkit-transition: all, 2s;
+  transition: all, 2s;
+}
+
+.section .container .left-box h2:hover {
+  font-size: 60px;
+}
+
+.section .container .right-box {
+  background-color: blue;
+}
+
+.section .container .right-box h2 {
+  font-weight: bold;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
 /*# sourceMappingURL=global.css.map */
