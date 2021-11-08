@@ -61,11 +61,21 @@ a {
   font-display: swap;
 }
 
-.section .container {
+.bg-image {
+  background-image: url(../image/desktop/image-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
-  background-color: lightgray;
+  height: 600px;
+}
+
+.bg-image .header-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,11 +85,30 @@ a {
   -webkit-box-align: none;
       -ms-flex-align: none;
           align-items: none;
+  padding-top: 30px;
+  padding-left: 30px;
 }
 
-.section .container > div {
-  width: 500px;
-  height: 500px;
+.bg-image .header-container .nav-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+}
+
+.bg-image .header-container .nav-ul .nav-li {
+  margin-right: 40px;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.bg-image .title-wrapper {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,42 +118,102 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  margin-top: 60px;
 }
 
-.section .container > div > h2 {
-  font-size: 50px;
-}
-
-.section .container .left-box {
-  background-color: red;
-  -webkit-transition: 2s;
-  transition: 2s;
-}
-
-.section .container .left-box:hover {
-  background-color: green;
-}
-
-.section .container .left-box h2 {
-  font-weight: bold;
+.bg-image .title-wrapper h1 {
   color: white;
   font-family: "Barlow", sans-serif;
-  -webkit-transition: all, 2s;
-  transition: all, 2s;
-}
-
-.section .container .left-box h2:hover {
-  font-size: 60px;
-}
-
-.section .container .right-box {
-  background-color: blue;
-}
-
-.section .container .right-box h2 {
   font-weight: bold;
-  color: black;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+
+.bg-image .title-wrapper img {
+  margin-top: 80px;
+}
+
+.section-1-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: none;
+      -ms-flex-pack: none;
+          justify-content: none;
+  -webkit-box-align: none;
+      -ms-flex-align: none;
+          align-items: none;
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section-1-wrapper .about-info {
+  width: 300px;
+  height: 300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.section-1-wrapper .about-info h2 {
+  font-size: 35px;
   font-family: "Poppins", sans-serif;
-  text-align: center;
+}
+
+.section-1-wrapper .about-info p {
+  font-size: 12px;
+  line-height: 20px;
+  font-family: "Barlow", sans-serif;
+}
+
+.section-1-wrapper .about-info a {
+  color: black;
+  font-weight: bolder;
+  font-family: "Poppins", sans-serif;
+  border-bottom: solid yellow;
+}
+
+.section-1-wrapper div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 585px;
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.section-1-wrapper div img {
+  max-width: 585px;
+  width: 100%;
+}
+
+.left-box {
+  background-image: url(../image/desktop/image-graphic-design.jpg);
+  height: 450px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right-box {
+  background-image: url(../image/desktop/image-photography.jpg);
+  height: 450px;
+  background-position: top;
 }
 /*# sourceMappingURL=global.css.map */
