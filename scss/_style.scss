@@ -100,11 +100,6 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-
-    // div{
-    //     background: none;
-    //     padding-bottom: 0%;
-    // }
 }
 
 .right-box{
@@ -112,13 +107,120 @@
     height: 450px;
     background-position: top;
     
-
-    // div{
-    //     text-align: center;
-    //     background: none;
-    //     width: 200px;
-    //     height: 200px;
-    // }
 }
 
 // Section 3 end
+
+// Section 4 start
+.section-4-container{
+    @include max-sizes(1170px,100%,0 auto);
+    padding-top: 100px;
+
+    .title{
+        text-align: center;
+
+        p{
+            font-size: 30px;
+            color: lightgrey;
+            font-family: $font-2;
+            letter-spacing: 6px;
+            font-weight: bold;
+        }
+    }
+
+        .about-wrapper{
+            padding-top: 50px;
+            @include flex(space-between,center);
+
+            .card{
+                max-width: 300px;
+                width: 100%;
+                @include flex(none,center);
+                flex-direction: column;
+                text-align: center;
+
+                p{
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                    color: darkgrey;
+                    font-family: $font-1;
+                    font-weight: bold;
+                }
+
+                h3{
+                    margin-bottom: 10px;
+                    font-size:30px;
+                    color: black;
+                    font-family: $font-2;
+                }
+
+                h5{
+                    font-size: 20px;
+                    color: rgb(92, 92, 92);
+                    font-family: $font-1;
+                }
+
+                img{
+                    @include sizes(100px);
+                }
+            }
+        }
+}
+
+// Section 4 end
+
+// Section 5 start
+
+.image-wrapper{
+    @include max-sizes(1170px,100%,0 auto);
+    @include flex(none,none);
+    padding-top: 130px;
+
+    img{
+        @include max-sizes(292px,100%, none);
+    }
+}
+// Section 5 end
+
+// Footer start
+.footer-container{
+    @include max-sizes(1170px,100%,0 auto);
+    background-color: rgb(144, 212, 197,);
+
+    .footer-wrapper{
+        @include sizes(350px);
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .logo{
+            fill: rgb(61, 129, 114);
+        }
+
+        .a{
+            word-spacing: 40px;
+        }
+
+        a{
+            margin: 0 auto;
+            word-spacing: 20px;
+            color: rgb(61, 129, 114);
+            font-family: $font-2;
+            transition: 0.5s;
+
+            &:hover{
+                color: white;
+            }
+        }
+        .contact{
+            word-spacing: 20px;
+
+        }
+
+
+    }   
+}
+
+// footer end
