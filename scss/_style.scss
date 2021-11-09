@@ -18,10 +18,17 @@
             @include flex(none,none);
 
 
+
             .nav-li{
                 margin-right:40px;
                 font-family: $font-2;
                 color: white;
+                transition: 0.2s;
+
+                &:hover{
+                   border-bottom: solid white;
+                   font-size: 17px;
+                }
             }
         }                
     }

@@ -105,6 +105,13 @@ a {
   margin-right: 40px;
   font-family: "Poppins", sans-serif;
   color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.bg-image .header-container .nav-ul .nav-li:hover {
+  border-bottom: solid white;
+  font-size: 17px;
 }
 
 .bg-image .title-wrapper {
