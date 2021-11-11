@@ -24,6 +24,8 @@
                 font-family: $font-2;
                 color: white;
                 transition: 0.2s;
+                font-weight: bold;
+
 
                 &:hover{
                    border-bottom: solid white;
@@ -101,18 +103,69 @@
 // Section 1 end
 
 // Section 3 start
+
+
 .left-box{
     background-image: url(../image/desktop/image-graphic-design.jpg);
     height: 450px;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    @include flex(center,flex-end);
+
+    .left-box-title{
+        background: none;
+        @include sizes(350px);
+        text-align: center;
+        margin-top: 300px;
+
+        h2{
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-family: $font-3;
+            color: rgb(35, 86, 74);
+            font-weight: bold;
+        }
+
+        p{
+            font-size: 15px;
+            color:rgb(35, 86, 74);
+            font-family: $font-1;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+    }
 }
 
 .right-box{
     background-image: url(../image/desktop/image-photography.jpg);
     height: 450px;
     background-position: top;
+
+    .right-box-title{
+        background: none;
+        @include sizes(350px);
+        text-align: center;
+        margin-top: 300px;
+
+        h2{
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-family: $font-3;
+            color: rgb(21, 81, 109);
+            font-weight: bold;
+
+        }
+
+        p{
+            font-size: 15px;
+            color:rgb(21, 81, 109);
+            font-family: $font-1;
+            font-weight: bold;
+            line-height: 1.6;
+        }
+
+    }
     
 }
 
@@ -216,6 +269,7 @@
             color: rgb(61, 129, 114);
             font-family: $font-2;
             transition: 0.5s;
+            font-weight: bold;
 
             &:hover{
                 color: white;

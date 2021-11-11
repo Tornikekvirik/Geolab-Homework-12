@@ -107,6 +107,7 @@ a {
   color: white;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  font-weight: bold;
 }
 
 .bg-image .header-container .nav-ul .nav-li:hover {
@@ -216,12 +217,69 @@ a {
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.left-box .left-box-title {
+  background: none;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.left-box .left-box-title h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: "Oleo Script", cursive;
+  color: #23564a;
+  font-weight: bold;
+}
+
+.left-box .left-box-title p {
+  font-size: 15px;
+  color: #23564a;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  line-height: 1.6;
 }
 
 .right-box {
   background-image: url(../image/desktop/image-photography.jpg);
   height: 450px;
   background-position: top;
+}
+
+.right-box .right-box-title {
+  background: none;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  margin-top: 300px;
+}
+
+.right-box .right-box-title h2 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: "Oleo Script", cursive;
+  color: #15516d;
+  font-weight: bold;
+}
+
+.right-box .right-box-title p {
+  font-size: 15px;
+  color: #15516d;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  line-height: 1.6;
 }
 
 .section-4-container {
@@ -363,6 +421,7 @@ a {
   font-family: "Poppins", sans-serif;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  font-weight: bold;
 }
 
 .footer-container .footer-wrapper a:hover {
